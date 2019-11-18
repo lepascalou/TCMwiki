@@ -631,6 +631,8 @@ Error message and password prompt
 
 <li>saveur</li>
 
+<li>selectedTags</li>
+
 <li>ShengJiang</li>
 
 <li>Syndromes de la Rate</li>
@@ -16753,7 +16755,7 @@ Résout le gonflement et favorise la gorge
 Chasse la Chaleur de la Superficie et clarifie la Chaleur Toxique à l'interne. Froide et glissante elle favorise le mouvement des selles (pas sous forme chao).
 &lt;/p&gt;</pre>
 </div>
-<div created="20191118144044840" modified="20191118144057838" tags="" title="Nouveau tiddler">
+<div created="20191118144044840" modified="20191118144632520" tags="" title="Nouveau tiddler">
 <pre>\define maketagfilter() tag[$(currentTiddler)$]
 
 &lt;style&gt;
@@ -16763,7 +16765,7 @@ Chasse la Chaleur de la Superficie et clarifie la Chaleur Toxique à l'interne. 
 
 __''SELECT TAGS:''__&lt;br&gt;
 @@.columns8
-&lt;$list filter=&quot;[all[tiddlers+shadows]tags[]sort[]]&quot;&gt;
+&lt;$list filter=&quot;[!is[system]tags[]sort[]]&quot;&gt;
    &lt;$checkbox tiddler=&quot;selectedTags&quot; index=&lt;&lt;currentTiddler&gt;&gt; checked=&lt;&lt;maketagfilter&gt;&gt;
         checkactions=&quot;&quot;&quot;&lt;$action-setfield $tiddler=&quot;selectedTags&quot; $index=&lt;&lt;currentTiddler&gt;&gt; $value=&lt;&lt;maketagfilter&gt;&gt; /&gt;&quot;&quot;&quot;
       uncheckactions=&quot;&quot;&quot;&lt;$action-setfield $tiddler=&quot;selectedTags&quot; $index=&lt;&lt;currentTiddler&gt;&gt; /&gt;&quot;&quot;&quot;&gt;
@@ -16931,6 +16933,9 @@ Froid externe avec fièvre, frissons, céphalées, douleurs du corps. </pre>
 </div>
 <div created="20191015122812385" modified="20191015122841141" tags="" title="saveur">
 <pre></pre>
+</div>
+<div created="20191118144107073" modified="20191118144218637" title="selectedTags" type="application/json">
+<pre>{}</pre>
 </div>
 <div chinois="生姜" created="20191110122311066" latin="Zingiberis Rhizoma recens" modified="20191113081133805" nature="Légèrement tiède" pinyin="shēng jiāng" posologie="3 - 9 grammes" saveur="Piquant" tags="todo [[Produits piquants et tièdes]] PPT" title="ShengJiang" tropisme="Poumon Rate Estomac">
 <pre>!! {{!!chinois}} - {{!!pinyin}} - {{!!latin}}
