@@ -605,6 +605,8 @@ Error message and password prompt
 
 <li>NiuBangZi</li>
 
+<li>Nouveau tiddler</li>
+
 <li>Obstruction des vaisseaux du cœur</li>
 
 <li>Obstruction interne par la stase de sang</li>
@@ -14726,8 +14728,8 @@ All tiddlers contain bibliography data in Bibtext format.
 <div created="20190922091301669" modified="20190922091301669" title="$:/state/toc/TableOfContents-Glossaire--118161433">
 <pre>open</pre>
 </div>
-<div created="20191013091716562" modified="20191118131213043" title="$:/state/toc/TableOfContents-Pharmacopée--118161433">
-<pre>close</pre>
+<div created="20191013091716562" modified="20191118142459285" title="$:/state/toc/TableOfContents-Pharmacopée--118161433">
+<pre>open</pre>
 </div>
 <div created="20190923084352305" modified="20191107140948245" title="$:/state/toc/TableOfContents-ZangFuBianZheng--118161433">
 <pre>close</pre>
@@ -14777,7 +14779,7 @@ All tiddlers contain bibliography data in Bibtext format.
 <div created="20191015084353918" modified="20191110121323059" title="$:/state/tree/$:/tags/">
 <pre>hide</pre>
 </div>
-<div created="20191118130335317" list="biuty Pharmacopée BoHe" modified="20191118131234087" title="$:/StoryList">
+<div created="20191118130335317" list="[[Nouveau tiddler]] BoHe Pharmacopée Articles" modified="20191118142503361" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20191015091126834" list="$:/core/ui/Buttons/home $:/core/ui/Buttons/close-all $:/core/ui/Buttons/fold-all $:/core/ui/Buttons/unfold-all $:/core/ui/Buttons/permaview $:/core/ui/Buttons/new-tiddler Pharmabtn $:/core/ui/Buttons/new-journal $:/core/ui/Buttons/new-image $:/core/ui/Buttons/import $:/core/ui/Buttons/export-page $:/core/ui/Buttons/control-panel $:/core/ui/Buttons/advanced-search $:/core/ui/Buttons/manager $:/core/ui/Buttons/tag-manager $:/core/ui/Buttons/language $:/core/ui/Buttons/palette $:/core/ui/Buttons/theme $:/core/ui/Buttons/storyview $:/core/ui/Buttons/encryption $:/core/ui/Buttons/timestamp $:/core/ui/Buttons/full-screen $:/core/ui/Buttons/print $:/core/ui/Buttons/save-wiki $:/core/ui/Buttons/refresh $:/core/ui/Buttons/more-page-actions" modified="20191015092600390" title="$:/tags/PageControls">
@@ -16750,6 +16752,32 @@ Résout le gonflement et favorise la gorge
 &lt;p class=&quot;alert alert-primary&quot;&gt;
 Chasse la Chaleur de la Superficie et clarifie la Chaleur Toxique à l'interne. Froide et glissante elle favorise le mouvement des selles (pas sous forme chao).
 &lt;/p&gt;</pre>
+</div>
+<div created="20191118144044840" modified="20191118144057838" tags="" title="Nouveau tiddler">
+<pre>\define maketagfilter() tag[$(currentTiddler)$]
+
+&lt;style&gt;
+.columns8 { display:block; -moz-column-count:8; -moz-column-gap:1em; -webkit-column-count:8; -webkit-column-gap:1em; font-size:60%; line-height:1em; }
+.columns4 { display:block; -moz-column-count:4; -moz-column-gap:1em; -webkit-column-count:4; -webkit-column-gap:1em; font-size:80%; line-height:1.4em; }
+&lt;/style&gt;
+
+__''SELECT TAGS:''__&lt;br&gt;
+@@.columns8
+&lt;$list filter=&quot;[all[tiddlers+shadows]tags[]sort[]]&quot;&gt;
+   &lt;$checkbox tiddler=&quot;selectedTags&quot; index=&lt;&lt;currentTiddler&gt;&gt; checked=&lt;&lt;maketagfilter&gt;&gt;
+        checkactions=&quot;&quot;&quot;&lt;$action-setfield $tiddler=&quot;selectedTags&quot; $index=&lt;&lt;currentTiddler&gt;&gt; $value=&lt;&lt;maketagfilter&gt;&gt; /&gt;&quot;&quot;&quot;
+      uncheckactions=&quot;&quot;&quot;&lt;$action-setfield $tiddler=&quot;selectedTags&quot; $index=&lt;&lt;currentTiddler&gt;&gt; /&gt;&quot;&quot;&quot;&gt;
+         &lt;$text text=&lt;&lt;currentTiddler&gt;&gt;/&gt;
+   &lt;/$checkbox&gt;&lt;br&gt;
+&lt;/$list&gt;
+@@
+&lt;$wikify name=&quot;filter&quot; text=&quot;&quot;&quot;[all[tiddlers+shadows]&lt;$list filter=&quot;[title[selectedTags]indexes[]]&quot;&gt;{{{ [[selectedTags]getindex&lt;currentTiddler&gt;] }}}&lt;/$list&gt;]&quot;&quot;&quot;&gt; 
+
+__''RESULTS FOR FILTER: &lt;$text text=&lt;&lt;filter&gt;&gt;/&gt;''__&lt;br&gt;
+&lt;$reveal text=&lt;&lt;filter&gt;&gt; type=&quot;nomatch&quot; default=&quot;[all[tiddlers+shadows]]&quot;&gt;
+@@.columns4 &lt;$list filter=&lt;&lt;filter&gt;&gt;&gt;&lt;$link/&gt;&lt;br&gt;&lt;/$list&gt;@@
+&lt;/$reveal&gt;
+&lt;/$wikify&gt;</pre>
 </div>
 <div chinois="心脉痹阻" created="20191010193419343" modified="20191010195349193" pinyin="xīn mài bì zǔ" tags="[[Syndromes du Cœur]]" title="Obstruction des vaisseaux du cœur">
 <pre>4 syndromes : 
