@@ -90,46 +90,42 @@ FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
 COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
 IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-*/.spinner {
-  margin: 100px auto;
-  width: 40px;
-  height: 40px;
-  position: relative;
-  text-align: center;
-  
-  -webkit-animation: sk-rotate 2.0s infinite linear;
-  animation: sk-rotate 2.0s infinite linear;
-}.dot1, .dot2 {
-  width: 60%;
-  height: 60%;
-  display: inline-block;
-  position: absolute;
-  top: 0;
-  background-color: #333;
-  border-radius: 100%;
-  
-  -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
-  animation: sk-bounce 2.0s infinite ease-in-out;
-}.dot2 {
-  top: auto;
-  bottom: 0;
-  -webkit-animation-delay: -1.0s;
-  animation-delay: -1.0s;
-}@-webkit-keyframes sk-rotate { 100% { -webkit-transform: rotate(360deg) }}
-@keyframes sk-rotate { 100% { transform: rotate(360deg); -webkit-transform: rotate(360deg) }}@-webkit-keyframes sk-bounce {
-  0%, 100% { -webkit-transform: scale(0.0) }
-  50% { -webkit-transform: scale(1.0) }
-}@keyframes sk-bounce {
-  0%, 100% { 
-    transform: scale(0.0);
-    -webkit-transform: scale(0.0);
-  } 50% { 
-    transform: scale(1.0);
-    -webkit-transform: scale(1.0);
-  }
-}</style><div class="spinner">
-  <div class="dot1"></div>
-  <div class="dot2"></div>
+*/.tc-splash-spinner {
+	margin: 20px auto 0;
+	width: 70px;
+	text-align: center;
+}.tc-splash-spinner > div {
+	width: 18px;
+	height: 18px;
+	border-radius: 100%;
+	display: inline-block;
+	-webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+	animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+	background-color: #f88;
+}.tc-splash-spinner .tc-splash-bounce-1 {
+	-webkit-animation-delay: -0.32s;
+	animation-delay: -0.32s;
+	background-color: #8f8;
+}.tc-splash-spinner .tc-splash-bounce-2 {
+	-webkit-animation-delay: -0.16s;
+	animation-delay: -0.16s;
+	background-color: #88f;
+}@-webkit-keyframes sk-bouncedelay {
+	0%, 80%, 100% { -webkit-transform: scale(0) }
+	40% { -webkit-transform: scale(1.0) }
+}@keyframes sk-bouncedelay {
+	0%, 80%, 100% { 
+	-webkit-transform: scale(0);
+	transform: scale(0);
+	} 40% { 
+	-webkit-transform: scale(1.0);
+	transform: scale(1.0);
+	}
+}
+</style><div class="tc-splash-spinner">
+  <div class="tc-splash-bounce-1"></div>
+  <div class="tc-splash-bounce-2"></div>
+  <div class="tc-splash-bounce-3"></div>
 </div><div class="tc-splash-text">
 Please wait while Médecine Chinoise is loading
 </div></div>
@@ -14812,7 +14808,7 @@ All tiddlers contain bibliography data in Bibtext format.
 <div created="20190922082544853" modified="20191120110324642" title="$:/state/tab/moresidebar-1850697562">
 <pre>$:/core/ui/MoreSideBar/All</pre>
 </div>
-<div created="20190922080033185" modified="20191122144010319" title="$:/state/tab/sidebar--595412856">
+<div created="20190922080033185" modified="20191122144413579" title="$:/state/tab/sidebar--595412856">
 <pre>$:/core/ui/SideBar/Recent</pre>
 </div>
 <div created="20191101154303176" modified="20191101154309071" title="$:/state/tables/Sort/Row/chinois pinyin latin saveur nature tropisme posologie">
@@ -14905,7 +14901,7 @@ All tiddlers contain bibliography data in Bibtext format.
 <div created="20191119164625720" modified="20191119164625720" title="$:/state/tree/$:/tags/ControlPanel/">
 <pre>show</pre>
 </div>
-<div created="20191122144011503" list="splash ZangFuBianZheng" modified="20191122144011503" title="$:/StoryList">
+<div created="20191122144414601" list="splash ZangFuBianZheng" modified="20191122144414601" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20191015091126834" list="$:/core/ui/Buttons/home $:/core/ui/Buttons/close-all $:/core/ui/Buttons/fold-all $:/core/ui/Buttons/unfold-all $:/core/ui/Buttons/permaview $:/core/ui/Buttons/new-tiddler Pharmabtn $:/core/ui/Buttons/new-journal $:/core/ui/Buttons/new-image $:/core/ui/Buttons/import $:/core/ui/Buttons/export-page $:/core/ui/Buttons/control-panel $:/core/ui/Buttons/advanced-search $:/core/ui/Buttons/manager $:/core/ui/Buttons/tag-manager $:/core/ui/Buttons/language $:/core/ui/Buttons/palette $:/core/ui/Buttons/theme $:/core/ui/Buttons/storyview $:/core/ui/Buttons/encryption $:/core/ui/Buttons/timestamp $:/core/ui/Buttons/full-screen $:/core/ui/Buttons/print $:/core/ui/Buttons/save-wiki $:/core/ui/Buttons/refresh $:/core/ui/Buttons/more-page-actions" modified="20191015092600390" title="$:/tags/PageControls">
@@ -17289,7 +17285,7 @@ Elimine la toxine
 
 &lt;&lt;list-links filter:&quot;[all[current]backlinks[]]&quot;&gt;&gt;</pre>
 </div>
-<div created="20191122143652020" modified="20191122144254698" tags="$:/tags/RawMarkupWikified/TopBody" title="splash">
+<div created="20191122143652020" modified="20191122144510937" tags="$:/tags/RawMarkupWikified/TopBody" title="splash">
 <pre>\import [[$:/core/ui/PageMacros]] [all[shadows+tiddlers]tag[$:/tags/Macro]!has[draft.of]]
 \rules only filteredtranscludeinline transcludeinline macrocallinline
 &lt;div class=&quot;tc-remove-when-wiki-loaded&quot;&gt;
@@ -17341,60 +17337,54 @@ IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
 
-.spinner {
-  margin: 100px auto;
-  width: 40px;
-  height: 40px;
-  position: relative;
-  text-align: center;
-  
-  -webkit-animation: sk-rotate 2.0s infinite linear;
-  animation: sk-rotate 2.0s infinite linear;
+.tc-splash-spinner {
+	margin: 20px auto 0;
+	width: 70px;
+	text-align: center;
 }
 
-.dot1, .dot2 {
-  width: 60%;
-  height: 60%;
-  display: inline-block;
-  position: absolute;
-  top: 0;
-  background-color: #333;
-  border-radius: 100%;
-  
-  -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
-  animation: sk-bounce 2.0s infinite ease-in-out;
+.tc-splash-spinner &gt; div {
+	width: 18px;
+	height: 18px;
+	border-radius: 100%;
+	display: inline-block;
+	-webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+	animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+	background-color: #f88;
 }
 
-.dot2 {
-  top: auto;
-  bottom: 0;
-  -webkit-animation-delay: -1.0s;
-  animation-delay: -1.0s;
+.tc-splash-spinner .tc-splash-bounce-1 {
+	-webkit-animation-delay: -0.32s;
+	animation-delay: -0.32s;
+	background-color: #8f8;
 }
 
-@-webkit-keyframes sk-rotate { 100% { -webkit-transform: rotate(360deg) }}
-@keyframes sk-rotate { 100% { transform: rotate(360deg); -webkit-transform: rotate(360deg) }}
-
-@-webkit-keyframes sk-bounce {
-  0%, 100% { -webkit-transform: scale(0.0) }
-  50% { -webkit-transform: scale(1.0) }
+.tc-splash-spinner .tc-splash-bounce-2 {
+	-webkit-animation-delay: -0.16s;
+	animation-delay: -0.16s;
+	background-color: #88f;
 }
 
-@keyframes sk-bounce {
-  0%, 100% { 
-    transform: scale(0.0);
-    -webkit-transform: scale(0.0);
-  } 50% { 
-    transform: scale(1.0);
-    -webkit-transform: scale(1.0);
-  }
+@-webkit-keyframes sk-bouncedelay {
+	0%, 80%, 100% { -webkit-transform: scale(0) }
+	40% { -webkit-transform: scale(1.0) }
 }
 
+@keyframes sk-bouncedelay {
+	0%, 80%, 100% { 
+	-webkit-transform: scale(0);
+	transform: scale(0);
+	} 40% { 
+	-webkit-transform: scale(1.0);
+	transform: scale(1.0);
+	}
+}
 &lt;/style&gt;
 
-&lt;div class=&quot;spinner&quot;&gt;
-  &lt;div class=&quot;dot1&quot;&gt;&lt;/div&gt;
-  &lt;div class=&quot;dot2&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;tc-splash-spinner&quot;&gt;
+  &lt;div class=&quot;tc-splash-bounce-1&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;tc-splash-bounce-2&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;tc-splash-bounce-3&quot;&gt;&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;tc-splash-text&quot;&gt;
