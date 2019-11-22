@@ -672,6 +672,8 @@ Error message and password prompt
 
 <li>GaoBen</li>
 
+<li>Glossaire général</li>
+
 <li>Glossaire Interactif Syndromes</li>
 
 <li>GlossaireFoie</li>
@@ -14814,8 +14816,8 @@ All tiddlers contain bibliography data in Bibtext format.
 <div created="20190922082544853" modified="20191122180511564" title="$:/state/tab/moresidebar-1850697562">
 <pre>$:/core/ui/MoreSideBar/All</pre>
 </div>
-<div created="20190922080033185" modified="20191122180510305" title="$:/state/tab/sidebar--595412856">
-<pre>$:/core/ui/SideBar/More</pre>
+<div created="20190922080033185" modified="20191122180548762" title="$:/state/tab/sidebar--595412856">
+<pre>TableOfContents</pre>
 </div>
 <div created="20191101154303176" modified="20191101154309071" title="$:/state/tables/Sort/Row/chinois pinyin latin saveur nature tropisme posologie">
 <pre>title</pre>
@@ -14910,7 +14912,7 @@ All tiddlers contain bibliography data in Bibtext format.
 <div created="20191119164625720" modified="20191119164625720" title="$:/state/tree/$:/tags/ControlPanel/">
 <pre>show</pre>
 </div>
-<div created="20191122144414601" list="GlossaireSyn $:/TagManager [[Glossaire Interactif Syndromes]] [[Le Tan Feu trouble les orifices du Cœur]] [[Chasser le vent et clarifier la chaleur]] ChanTui [[Produits piquants et frais]] ZangFuBianZheng" modified="20191122180513858" title="$:/StoryList">
+<div created="20191122144414601" list="[[Glossaire général]] $:/TagManager [[Glossaire Interactif Syndromes]] [[Le Tan Feu trouble les orifices du Cœur]] [[Chasser le vent et clarifier la chaleur]] ChanTui [[Produits piquants et frais]] ZangFuBianZheng" modified="20191122180513858" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20191015091126834" list="$:/core/ui/Buttons/home $:/core/ui/Buttons/close-all $:/core/ui/Buttons/fold-all $:/core/ui/Buttons/unfold-all $:/core/ui/Buttons/permaview $:/core/ui/Buttons/new-tiddler Pharmabtn $:/core/ui/Buttons/new-journal $:/core/ui/Buttons/new-image $:/core/ui/Buttons/import $:/core/ui/Buttons/export-page $:/core/ui/Buttons/control-panel $:/core/ui/Buttons/advanced-search $:/core/ui/Buttons/manager $:/core/ui/Buttons/tag-manager $:/core/ui/Buttons/language $:/core/ui/Buttons/palette $:/core/ui/Buttons/theme $:/core/ui/Buttons/storyview $:/core/ui/Buttons/encryption $:/core/ui/Buttons/timestamp $:/core/ui/Buttons/full-screen $:/core/ui/Buttons/print $:/core/ui/Buttons/save-wiki $:/core/ui/Buttons/refresh $:/core/ui/Buttons/more-page-actions" modified="20191015092600390" title="$:/tags/PageControls">
@@ -16227,7 +16229,7 @@ Disperse le Vent-Chaleur externe, calme le Vent interne, rafraîchit le Poumon e
 
 &lt;&lt;list-links filter:&quot;[all[current]backlinks[]]&quot;&gt;&gt;</pre>
 </div>
-<div chinois="疏风泄热" created="20191122174635957" modified="20191122180540011" pinyin="shū fēng xiè rè" tags="GlossaireSyn" title="Chasser le vent et clarifier la chaleur">
+<div chinois="疏风泄热" created="20191122174635957" modified="20191122180622750" pinyin="shū fēng xiè rè" tags="glossaire" title="Chasser le vent et clarifier la chaleur">
 <pre></pre>
 </div>
 <div chinois="葱白" created="20191110122832451" latin="Allii fistulosi Bulbus" modified="20191120110501694" nature="Tiède" pinyin="cōng bái" posologie="3 - 9 grammes" saveur="Piquant" tags="[[Produits piquants et tièdes]] PPT todo" title="CongBai" tropisme="Poumon Estomac">
@@ -16426,11 +16428,14 @@ Sa forte nature ascendante atteint le vertex et traite les maux de tête avec do
 
 &lt;&lt;list-links filter:&quot;[all[current]backlinks[]]&quot;&gt;&gt;</pre>
 </div>
-<div created="20191010160725144" modified="20191122175710434" tags="TableOfContents" title="Glossaire Interactif Syndromes">
+<div created="20191122180703195" list="chinois pinyin" modified="20191122180837752" tags="TableOfContents" title="Glossaire général">
+<pre>&lt;&lt;fields2table &quot;[tag[glossaire]]&quot;&gt;&gt;</pre>
+</div>
+<div created="20191010160725144" modified="20191122180602011" tags="TableOfContents" title="Glossaire Interactif Syndromes">
 <pre>\define glossary(subfilter)
 
 &lt;table&gt;
-&lt;$list filter=&quot;[!is[system]tag[GlossaireSynd]$subfilter$sort[]]&quot;&gt;
+&lt;$list filter=&quot;[!is[system]tag[GlossaireSyn]$subfilter$sort[]]&quot;&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;$link to={{!!title}}&gt;&lt;$view field=&quot;title&quot;/&gt;&lt;/$link&gt;&lt;/td&gt;
 &lt;td&gt;&lt;$view field=&quot;chinois&quot; /&gt;&lt;/td&gt;
