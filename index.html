@@ -242,6 +242,8 @@ Error message and password prompt
 
 <li>$:/core</li>
 
+<li>$:/core/ui/ViewTemplate/subtitle</li>
+
 <li>$:/DefaultTiddlers</li>
 
 <li>$:/GitHub/Filename</li>
@@ -370,9 +372,13 @@ Error message and password prompt
 
 <li>$:/state/tree/$:/core/macros/</li>
 
+<li>$:/state/tree/$:/core/templates/</li>
+
 <li>$:/state/tree/$:/core/ui/</li>
 
 <li>$:/state/tree/$:/core/ui/Buttons/</li>
+
+<li>$:/state/tree/$:/core/ui/ViewTemplate/</li>
 
 <li>$:/state/tree/$:/GitHub/</li>
 
@@ -10114,6 +10120,16 @@ Error message and password prompt
     }
 }</pre>
 </div>
+<div created="20191125115507576" modified="20191125120011986" tags="$:/tags/ViewTemplate" title="$:/core/ui/ViewTemplate/subtitle">
+<pre>&lt;$reveal type=&quot;nomatch&quot; stateTitle=&lt;&lt;folded-state&gt;&gt; text=&quot;hide&quot; tag=&quot;div&quot; retain=&quot;yes&quot; animate=&quot;yes&quot;&gt;
+&lt;div class=&quot;tc-subtitle&quot;&gt;
+&lt;$link to={{!!modifier}}&gt;
+&lt;$view field=&quot;modifier&quot;/&gt;
+&lt;/$link&gt; &lt;$view field=&quot;modified&quot; format=&quot;date&quot; template={{$:/language/Tiddler/DateFormat}}/&gt;
+&lt;/div&gt;
+&lt;/$reveal&gt;
+</pre>
+</div>
 <div created="20191010205523303" modified="20191011082323340" title="$:/DefaultTiddlers">
 <pre>ZangFuBianZheng</pre>
 </div>
@@ -14795,8 +14811,8 @@ All tiddlers contain bibliography data in Bibtext format.
 <div created="20191015123055193" modified="20191015123057224" show="" title="$:/state/ProdPharmaDB/Display Rows/trop">
 <pre></pre>
 </div>
-<div created="20190922081407076" modified="20191125093241224" title="$:/state/showeditpreview">
-<pre>yes</pre>
+<div created="20190922081407076" modified="20191125121511560" title="$:/state/showeditpreview">
+<pre>no</pre>
 </div>
 <div created="20191015113925331" modified="20191015113925331" title="$:/state/ShowPaletteEditor">
 <pre>yes</pre>
@@ -14834,10 +14850,10 @@ All tiddlers contain bibliography data in Bibtext format.
 <div created="20191015124437144" modified="20191015124505944" title="$:/state/tab-475482130">
 <pre>$:/core/ui/TiddlerInfo/Tagging</pre>
 </div>
-<div created="20190922082544853" modified="20191122180511564" title="$:/state/tab/moresidebar-1850697562">
-<pre>$:/core/ui/MoreSideBar/All</pre>
+<div created="20190922082544853" modified="20191125114547061" title="$:/state/tab/moresidebar-1850697562">
+<pre>$:/core/ui/MoreSideBar/Explorer</pre>
 </div>
-<div created="20190922080033185" modified="20191122180548762" title="$:/state/tab/sidebar--595412856">
+<div created="20190922080033185" modified="20191125120845364" title="$:/state/tab/sidebar--595412856">
 <pre>TableOfContents</pre>
 </div>
 <div created="20191101154303176" modified="20191101154309071" title="$:/state/tables/Sort/Row/chinois pinyin latin saveur nature tropisme posologie">
@@ -14900,16 +14916,22 @@ All tiddlers contain bibliography data in Bibtext format.
 <div created="20191119164827230" modified="20191119164827230" title="$:/state/tree/$:/config/Toolbar/">
 <pre>show</pre>
 </div>
-<div created="20191015092827028" modified="20191110121320940" title="$:/state/tree/$:/core/">
-<pre>hide</pre>
-</div>
-<div created="20191106135630572" modified="20191106135630572" title="$:/state/tree/$:/core/macros/">
+<div created="20191015092827028" modified="20191125114550078" title="$:/state/tree/$:/core/">
 <pre>show</pre>
 </div>
-<div created="20191015092829640" modified="20191106135626166" title="$:/state/tree/$:/core/ui/">
+<div created="20191106135630572" modified="20191125114553030" title="$:/state/tree/$:/core/macros/">
 <pre>hide</pre>
 </div>
-<div created="20191015092835244" modified="20191015092835244" title="$:/state/tree/$:/core/ui/Buttons/">
+<div created="20191125114958422" modified="20191125115022395" title="$:/state/tree/$:/core/templates/">
+<pre>hide</pre>
+</div>
+<div created="20191015092829640" modified="20191125115026057" title="$:/state/tree/$:/core/ui/">
+<pre>show</pre>
+</div>
+<div created="20191015092835244" modified="20191125115031636" title="$:/state/tree/$:/core/ui/Buttons/">
+<pre>hide</pre>
+</div>
+<div created="20191125115033680" modified="20191125115033680" title="$:/state/tree/$:/core/ui/ViewTemplate/">
 <pre>show</pre>
 </div>
 <div created="20191119180316440" modified="20191119180334768" title="$:/state/tree/$:/GitHub/">
@@ -14933,7 +14955,7 @@ All tiddlers contain bibliography data in Bibtext format.
 <div created="20191119164625720" modified="20191119164625720" title="$:/state/tree/$:/tags/ControlPanel/">
 <pre>show</pre>
 </div>
-<div created="20191125075453681" list="$:/ControlPanel WuYunLiuQi [[Wu Yun Liu Qi 2019]] [[Traitement acouphène maladie shaoyang]] [[Année Ji Hai 己亥 2019]] BoHe [[Glossaire général]] [[Chasser le vent et drainer(?) la chaleur]] [[Apaiser le Vent]] ZangFuBianZheng" modified="20191125100051881" title="$:/StoryList">
+<div created="20191125075453681" list="[[Wu Yun Liu Qi 2019]] [[Glossaire général]] [[Chasser le vent et drainer(?) la chaleur]] [[Apaiser le Vent]] ZangFuBianZheng" modified="20191125121604009" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20191015091126834" list="$:/core/ui/Buttons/home $:/core/ui/Buttons/close-all $:/core/ui/Buttons/fold-all $:/core/ui/Buttons/unfold-all $:/core/ui/Buttons/permaview $:/core/ui/Buttons/new-tiddler Pharmabtn $:/core/ui/Buttons/new-journal $:/core/ui/Buttons/new-image $:/core/ui/Buttons/import $:/core/ui/Buttons/export-page $:/core/ui/Buttons/control-panel $:/core/ui/Buttons/advanced-search $:/core/ui/Buttons/manager $:/core/ui/Buttons/tag-manager $:/core/ui/Buttons/language $:/core/ui/Buttons/palette $:/core/ui/Buttons/theme $:/core/ui/Buttons/storyview $:/core/ui/Buttons/encryption $:/core/ui/Buttons/timestamp $:/core/ui/Buttons/full-screen $:/core/ui/Buttons/print $:/core/ui/Buttons/save-wiki $:/core/ui/Buttons/refresh $:/core/ui/Buttons/more-page-actions" modified="20191015092600390" title="$:/tags/PageControls">
@@ -15951,8 +15973,12 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
 <div chinois="明目" created="20191122181233971" modified="20191122181326274" pinyin="míng mù" tags="glossaire" title="Améliorer la vision">
 <pre></pre>
 </div>
-<div author="L. Benaicha" created="20191111091731170" modified="20191125094830602" tags="Articles" title="Année Ji Hai 己亥 2019">
-<pre>!! Auteur : {{!!author}}
+<div author="L. Benaicha" created="20191111091731170" modified="20191125120404007" tags="Articles" title="Année Ji Hai 己亥 2019" url="http://www.lokmane-benaicha.com/?q=node/189">
+<pre>&lt;&lt;&lt;
+Par : {{!!author}}&lt;br&gt;
+Lien : {{!!url}}
+&lt;&lt;&lt;
+
 
 La théorie du Wu Yun Liu Qi est la représentation du concept fondamental de la médecine chinoise « l’interaction entre le Ciel et les humains ». Ainsi, la théorie du Wu Yun Liu Qi explore les lois des cycles des changements de la nature et ses influences sur la santé des humains.
 
@@ -18050,11 +18076,14 @@ $:/state/tables/Sort/$(RowOrColumn)$/$(FieldsList)$
 
 &lt;/div&gt;</pre>
 </div>
-<div author="F. Breton" created="20191028131920842" modified="20191125094842430" tags="Articles" title="Traitement acouphène maladie shaoyang">
-<pre>!! Auteur : {{!!author}}
+<div author="F. Breton" created="20191028131920842" modified="20191125120902561" tags="Articles" title="Traitement acouphène maladie shaoyang" url="https://www.liangshen.org/page40.html">
+<pre>&lt;&lt;&lt;
+Par : {{!!author}}&lt;br&gt;
+Lien : {{!!url}}
+&lt;&lt;&lt;
 
 !! Traitement d'un acouphène [erming 耳鸣] dans une maladie de Shaoyang
-Par Frédéric Breton
+
 
  
 
@@ -18239,8 +18268,11 @@ Tonifier et réchauffer yang du Coeur
 <div chinois="心阴虚" created="20190923090227983" modified="20191122180540011" pinyin="xīn yīn xū" tags="GlossaireSyn vide [[Syndromes du Cœur]]" title="Vide de Yin du Cœur">
 <pre></pre>
 </div>
-<div author="A. Glaser" created="20191123143950370" modified="20191125094859199" tags="Articles" title="Wu Yun Liu Qi 2019">
-<pre>!! Auteur : {{!!author}}
+<div author="A. Glaser" created="20191123143950370" modified="20191125121700070" tags="Articles" title="Wu Yun Liu Qi 2019" url="https://www.liangshen.org/page50.html">
+<pre>&lt;&lt;&lt;
+Par : {{!!author}}&lt;br&gt;
+Lien : {{!!url}}
+&lt;&lt;&lt;
 
 ! Influence des 5 mouvements et des 6 qi (wu yun liu qi 五运六气) pour l'année 2019
 
@@ -18252,7 +18284,7 @@ Le sixième tronc céleste (ji己) est en correspondance avec la terre yin. Il d
 
 La douzième branche terrestre (hai 亥) est en correspondance avec le mouvement eau au sein  des  trois  constellations  du  Guerrier  Mystérieux (xuan  wu 玄武) au  Nord. Elle  définit  une année avec une Présidence au Ciel (si tian 司天) du bois vent de jueyin (jueyin feng mu 厥阴风木) et une Présence à la Source (zai quan 在泉) du feu ministre de shaoyang (shaoyang xiang huo 少阳相火). 
 
-La douzième branche terrestre (hai 亥) indique une année sous le signe dit du cochon (zhu 猪������). L’année 2019 du cochon de terre yin commencera le 5 février 2019 (à la première lune suivant le 24ème terme solaire (da han 大寒) et se terminera le 24 janvier 2020.
+La douzième branche terrestre (hai 亥) indique une année sous le signe dit du cochon (zhu 猪). L’année 2019 du cochon de terre yin commencera le 5 février 2019 (à la première lune suivant le 24ème terme solaire (da han 大寒) et se terminera le 24 janvier 2020.
 
 !! Le mouvement de l'année (sui yun 岁运)
 
@@ -18452,8 +18484,11 @@ En acupuncture, nous pourrons penser à prévenir et à traiter de manière gén
 
 En  pharmacopée,  nous  pourrons  nous  baser,  par  exemple,  sur  l'utilisation  de  la  formule XiaoChaiHuTang augmentée de FangFeng, HuangLian et LianQiao pour régulariser le shaoyang afin de prévenir ou traiter des stades initiaux de maladies de tiédeur. On pourra utiliser la formule YinQiaoSan augmentée de FangFeng, ShengMa, ZhiZi et HuaShi (voire ShiGao si la chaleur est importante) toujours pour régulariser le shaoyang tout en abaissant la chaleur bloquée à yangming afin que le feu descende correctement plonger dans l'eau froide de taiyang...            .</pre>
 </div>
-<div author="JS. Prot" created="20191102171610918" modified="20191125094916132" tags="Articles" title="WuYunLiuQi">
-<pre>!! Auteur : {{!!author}}
+<div author="JS. Prot" created="20191102171610918" modified="20191125121528640" tags="Articles" title="WuYunLiuQi" url="https://medecinechinoiseclassique.fr/applications-de-la-theorie-des-5-yun-et-des-6-qi-wu-yun-liu-qi-%e4%ba%94%e8%bf%90%e5%85%ad%e6%b0%94-en-medecine-chinoise-classique">
+<pre>&lt;&lt;&lt;
+Par : {{!!author}}&lt;br&gt;
+Lien : {{!!url}}
+&lt;&lt;&lt;
 
 ! Applications de la théorie des 5 Yun et des 6 Qi (wu yun liu qi 五运六气) en médecine chinoise classique - Médecine Chinoise Classique &amp; Acupuncture Optimale
 
