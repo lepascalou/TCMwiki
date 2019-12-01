@@ -310,6 +310,8 @@ Error message and password prompt
 
 <li>$:/state/ProdPharmaDB/Display Rows/trop</li>
 
+<li>$:/state/SampleReveal2</li>
+
 <li>$:/state/showeditpreview</li>
 
 <li>$:/state/ShowPaletteEditor</li>
@@ -14911,13 +14913,16 @@ All tiddlers contain bibliography data in Bibtext format.
 <div created="20191015123055193" modified="20191015123057224" show="" title="$:/state/ProdPharmaDB/Display Rows/trop">
 <pre></pre>
 </div>
+<div created="20191201131754535" creator="Pascal" modified="20191201132335691" modifier="Pascal" title="$:/state/SampleReveal2">
+<pre>hide</pre>
+</div>
 <div created="20190922081407076" creator="Pascal" modified="20191201084453623" modifier="Pascal" title="$:/state/showeditpreview">
 <pre>yes</pre>
 </div>
 <div created="20191015113925331" modified="20191015113925331" title="$:/state/ShowPaletteEditor">
 <pre>yes</pre>
 </div>
-<div created="20190922083019668" creator="Pascal" modified="20191201104524244" modifier="Pascal" title="$:/state/sidebar">
+<div created="20190922083019668" creator="Pascal" modified="20191201131254101" modifier="Pascal" title="$:/state/sidebar">
 <pre>yes</pre>
 </div>
 <div created="20191011074535379" modified="20191119164453868" title="$:/state/tab--1498284803">
@@ -14953,8 +14958,8 @@ All tiddlers contain bibliography data in Bibtext format.
 <div created="20190922082544853" creator="Pascal" modified="20191127092942500" modifier="Pascal" title="$:/state/tab/moresidebar-1850697562">
 <pre>$:/core/ui/MoreSideBar/All</pre>
 </div>
-<div created="20190922080033185" creator="Pascal" modified="20191201130318028" modifier="Pascal" title="$:/state/tab/sidebar--595412856">
-<pre>$:/core/ui/SideBar/More</pre>
+<div created="20190922080033185" creator="Pascal" modified="20191201130422473" modifier="Pascal" title="$:/state/tab/sidebar--595412856">
+<pre>TableOfContents</pre>
 </div>
 <div created="20191101154303176" modified="20191101154309071" title="$:/state/tables/Sort/Row/chinois pinyin latin saveur nature tropisme posologie">
 <pre>title</pre>
@@ -15112,7 +15117,7 @@ All tiddlers contain bibliography data in Bibtext format.
 <div created="20191125122029844" creator="P" modified="20191125122030644" modifier="Pasca" title="$:/status/UserName">
 <pre>Pascal</pre>
 </div>
-<div created="20191201082450387" creator="Pascal" list="[[Glossaire général]] XiXin GaoBen [[Produits piquants et frais]] ZangFuBianZheng" modified="20191201130328110" modifier="Pascal" title="$:/StoryList">
+<div created="20191201082450387" creator="Pascal" list="ZangFuBianZheng" modified="20191201130926901" modifier="Pascal" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20191015091126834" creator="Pascal" list="$:/core/ui/Buttons/home $:/core/ui/Buttons/close-all $:/core/ui/Buttons/fold-all $:/core/ui/Buttons/unfold-all $:/core/ui/Buttons/permaview $:/core/ui/Buttons/new-tiddler Pharmabtn Glossairebtn $:/core/ui/Buttons/new-journal $:/core/ui/Buttons/new-image $:/core/ui/Buttons/import $:/core/ui/Buttons/export-page $:/core/ui/Buttons/control-panel $:/core/ui/Buttons/advanced-search $:/core/ui/Buttons/manager $:/core/ui/Buttons/tag-manager $:/core/ui/Buttons/language $:/core/ui/Buttons/palette $:/core/ui/Buttons/theme $:/core/ui/Buttons/storyview $:/core/ui/Buttons/encryption $:/core/ui/Buttons/timestamp $:/core/ui/Buttons/full-screen $:/core/ui/Buttons/print $:/core/ui/Buttons/save-wiki $:/core/ui/Buttons/refresh $:/core/ui/Buttons/more-page-actions" modified="20191127093435198" modifier="Pascal" title="$:/tags/PageControls">
@@ -17628,8 +17633,34 @@ Recouvrent en partie les cardiopathies de la médecine occidentale.
 
 </pre>
 </div>
-<div created="20191013091018234" creator="Pascal" list="chinois nature saveur tropisme" mode="" modified="20191125123728956" modifier="Pascal" tags="TableOfContents" title="Pharmacopée">
-<pre>&lt;&lt;fields2table &quot;[tag[Produits piquants et tièdes]][tag[Produits piquants et frais]]&quot;&gt;&gt;</pre>
+<div created="20191013091018234" creator="Pascal" list="chinois tropisme saveur nature" mode="" modified="20191201132326536" modifier="Pascal" tags="TableOfContents" title="Pharmacopée">
+<pre>! Produits piquants et frais
+&lt;$reveal type=&quot;nomatch&quot; state=&quot;$:/state/SampleReveal2&quot; text=&quot;show&quot;&gt;
+
+&lt;$button set=&quot;$:/state/SampleReveal2&quot; setTo=&quot;show&quot;&gt;Afficher&lt;/$button&gt;
+
+&lt;/$reveal&gt;
+&lt;$reveal type=&quot;match&quot; state=&quot;$:/state/SampleReveal2&quot; text=&quot;show&quot;&gt;
+
+&lt;$button set=&quot;$:/state/SampleReveal2&quot; setTo=&quot;hide&quot;&gt;Cacher&lt;/$button&gt;
+
+{{Produits piquants et frais}}
+&lt;/$reveal&gt;
+
+
+! Produits piquants et tièdes
+&lt;$reveal type=&quot;nomatch&quot; state=&quot;$:/state/SampleReveal2&quot; text=&quot;show&quot;&gt;
+
+&lt;$button set=&quot;$:/state/SampleReveal2&quot; setTo=&quot;show&quot;&gt;Afficher&lt;/$button&gt;
+
+&lt;/$reveal&gt;
+&lt;$reveal type=&quot;match&quot; state=&quot;$:/state/SampleReveal2&quot; text=&quot;show&quot;&gt;
+
+&lt;$button set=&quot;$:/state/SampleReveal2&quot; setTo=&quot;hide&quot;&gt;Cacher&lt;/$button&gt;
+
+{{Produits piquants et tièdes}}
+&lt;/$reveal&gt;
+</pre>
 </div>
 <div chinois="" created="20191014092409525" latin="" modified="20191120110352520" nature="" pinyin="" posologie="" saveur="" tags="" title="PHARMATMP" tropisme="">
 <pre>!! {{!!chinois}} - {{!!pinyin}} - {{!!latin}}
@@ -17680,14 +17711,14 @@ Recouvrent en partie les cardiopathies de la médecine occidentale.
 <div created="20191015122850668" modified="20191015122850668" tags="" title="pinyin">
 <pre></pre>
 </div>
-<div chinois="辛凉解表" color="#9ef5f6" created="20191118091755921" creator="Pascal" list="pinyin chinois latin tropisme saveur nature posologie" modified="20191125162901427" modifier="Pascal" pinyin="xīn liáng jiě biǎo" tags="Pharmacopée" title="Produits piquants et frais">
+<div chinois="辛凉解表" color="#9ef5f6" created="20191118091755921" creator="Pascal" list="chinois tropisme saveur nature posologie" modified="20191201130607214" modifier="Pascal" pinyin="xīn liáng jiě biǎo" tags="Pharmacopée" title="Produits piquants et frais">
 <pre>!! Les produits piquants et frais qui libèrent la Superficie
 
 {{!!chinois}} - {{!!pinyin}}
 
 &lt;&lt;fields2table &quot;[tag[Produits piquants et frais]]&quot;&gt;&gt;</pre>
 </div>
-<div chinois="辛温解表" color="#f29839" created="20191013091129612" creator="Pascal" list="pinyin chinois latin tropisme saveur nature posologie" mode="" modified="20191125162923147" modifier="Pascal" pinyin="xīn wēn jiě biǎo" tags="Pharmacopée" title="Produits piquants et tièdes" type="text/vnd.tiddlywiki">
+<div chinois="辛温解表" color="#f29839" created="20191013091129612" creator="Pascal" list="chinois tropisme saveur nature posologie" mode="" modified="20191201130703740" modifier="Pascal" pinyin="xīn wēn jiě biǎo" tags="Pharmacopée" title="Produits piquants et tièdes" type="text/vnd.tiddlywiki">
 <pre>!! Les produits piquants et tièdes qui libèrent la Superficie
 
 {{!!chinois}} - {{!!pinyin}}
