@@ -252,6 +252,12 @@ Error message and password prompt
 
 <li>$:/config/RelinkOnRename</li>
 
+<li>$:/config/SaveFilter</li>
+
+<li>$:/config/SaverFilter</li>
+
+<li>$:/config/SyncFilter</li>
+
 <li>$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/fold-bar</li>
 
 <li>$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/info</li>
@@ -308,6 +314,8 @@ Error message and password prompt
 
 <li>$:/plugins/tiddlywiki/markdown</li>
 
+<li>$:/settings/Bob/DisplayOnChildWikis</li>
+
 <li>$:/SiteSubtitle</li>
 
 <li>$:/SiteTitle</li>
@@ -332,26 +340,6 @@ Error message and password prompt
 
 <li>$:/WikiName</li>
 
-<li>161020FredP1</li>
-
-<li>161020FredP2</li>
-
-<li>161020FredP3</li>
-
-<li>161020FredP4</li>
-
-<li>161020FredP5</li>
-
-<li>161020FredP6</li>
-
-<li>161020FredP7</li>
-
-<li>170516FredP1</li>
-
-<li>191206YanP1</li>
-
-<li>191206YanP2</li>
-
 <li>Accueil</li>
 
 <li>Améliorer la vision</li>
@@ -371,8 +359,6 @@ Error message and password prompt
 <li>BoHe</li>
 
 <li>CangErZi</li>
-
-<li>Cas cliniques</li>
 
 <li>ChaiHu</li>
 
@@ -422,6 +408,8 @@ Error message and password prompt
 
 <li>FiltresVrac</li>
 
+<li>Formules</li>
+
 <li>GaoBen</li>
 
 <li>GeGen</li>
@@ -466,17 +454,13 @@ Error message and password prompt
 
 <li>ls-ch37</li>
 
-<li>LS02-lombalgie</li>
-
-<li>LS02-psoriasis</li>
-
 <li>MaHuang</li>
+
+<li>MaHuangJiaZhuTang</li>
 
 <li>MaHuangTang</li>
 
 <li>ManJingZi</li>
-
-<li>Modif BanXiaXieXinTg</li>
 
 <li>New Pharma Tiddler</li>
 
@@ -485,8 +469,6 @@ Error message and password prompt
 <li>NiuBangZi</li>
 
 <li>Notes</li>
-
-<li>Observation clinique</li>
 
 <li>Obstruction des vaisseaux du cœur</li>
 
@@ -526,6 +508,8 @@ Error message and password prompt
 
 <li>SangYe</li>
 
+<li>saveSelected</li>
+
 <li>saveur</li>
 
 <li>selectedTags</li>
@@ -537,6 +521,20 @@ Error message and password prompt
 <li>ShiGao</li>
 
 <li>splash</li>
+
+<li>Strangurie</li>
+
+<li>Strangurie chyleuse</li>
+
+<li>Strangurie de chaleur</li>
+
+<li>Strangurie de consomption</li>
+
+<li>Strangurie du Qi</li>
+
+<li>Strangurie du sang</li>
+
+<li>Strangurie urolithique</li>
 
 <li>SuWen</li>
 
@@ -577,8 +575,6 @@ Error message and password prompt
 <li>XinYi</li>
 
 <li>XiXin</li>
-
-<li>YBwe7 Angoisses</li>
 
 <li>ZangFuBianZheng</li>
 
@@ -738,6 +734,17 @@ Error message and password prompt
 </div>
 <div created="20191010162212260" modified="20191010162212260" title="$:/config/RelinkOnRename">
 <pre>yes</pre>
+</div>
+<div created="20200110081629668" modified="20200110082434879" title="$:/config/SaveFilter">
+<pre>[is[tiddler]] -[[$:/HistoryList]] -[[$:/Import]] -[[$:/isEncrypted]] -[prefix[$:/status/]] -[prefix[$:/state/]] -[prefix[$:/temp/]] -[prefix[$:/Bob/]] -[prefix[$:/WikiSettings/]] -[[$:/plugins/OokTech/Bob/Server Warning]] -[[$:/WikiSettings]] -[[$:/ServerIP]] -[[$:/StoryList]] -[[$:/WikiName]]
+</pre>
+</div>
+<div created="20200110081737910" modified="20200110082413253" title="$:/config/SaverFilter">
+<pre>[all[]] -[[$:/HistoryList]] -[[$:/StoryList]] -[[$:/Import]] -[[$:/isEncrypted]] -[[$:/UploadName]] -[prefix[$:/state/]] -[prefix[$:/temp/]]</pre>
+</div>
+<div created="20200110081852727" modified="20200110082424764" title="$:/config/SyncFilter">
+<pre>[is[tiddler]] -[[$:/HistoryList]] -[[$:/Import]] -[[$:/isEncrypted]] -[prefix[$:/status/]] -[prefix[$:/state/]] -[prefix[$:/temp/]] -[prefix[$:/Bob/]] -[prefix[$:/WikiSettings/]] -[[$:/plugins/OokTech/Bob/Server Warning]] -[[$:/WikiSettings]] -[[$:/ServerIP]] -[[$:/StoryList]] -[[$:/WikiName]]
+</pre>
 </div>
 <div created="20191207112902101" modified="20191207112902101" title="$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/fold-bar">
 <pre>show</pre>
@@ -14979,6 +14986,9 @@ All tiddlers contain bibliography data in Bibtext format.
     }
 }</pre>
 </div>
+<div created="20200109214314536" modified="20200109214314536" title="$:/settings/Bob/DisplayOnChildWikis">
+<pre>yes</pre>
+</div>
 <div created="20190922075313160" modified="20190922075313160" title="$:/SiteSubtitle">
 <pre></pre>
 </div>
@@ -15125,485 +15135,6 @@ All tiddlers contain bibliography data in Bibtext format.
 </div>
 <div title="$:/WikiName">
 <pre>MedecineChinoise</pre>
-</div>
-<div category="Clinique" created="20191207111653599" modified="20191216141617576" tags="[[Observation clinique]]" title="161020FredP1" type="text/vnd.tiddlywiki">
-<pre>Femme - entre 40 et 50 ans  
-
-!!! Interrogatoire
-
-* fatigue - sautes d'humeur
-* émotionnel : tri relation familiales
-* transpiration en journée, peur
-* sommeil avec haut et bas, qd réveillee ne peut se rendormir
-* pas très faim en général
-* pas de vertiges, rares céphalées
-* froid la nuit
-
-
-!!! Observation
-
-* Pouls serré
-* Langue pâle enduit blanc
-
-!!! Divers
-
-* Terrain asthmatique (guéri depuis 1 an et demie)
-* Fonction de déploiement du Bois amoindrie
-
-!!! Acu
-
-* G: 3F + 8F 
-* D: 3IG (Wan Shun Yi, Wan Shun Er, Tung?)
-* D: Tung : Huo lian, Huo ju, Huo san (3Rte 4Rte 2Rn) 
-* D: 7C
-
-!! Pharma
-
-| Herbe | Dosage | Section |
-| FuZi 附子 | 10 | 7.1.1 |
-| ShengJiang 生姜 | 15 | 1.1.4 |
-| ZhiGanCao 炙甘草 | 18 | 17.1.9 |
-| GuiZhi 桂枝 | 10 | 1.1.2 |
-| ShiChangPu 石菖蒲 | 10 | 16.1.4 |
-| DangGui 当归 | 15 | 17.3.1 |
-| DaZao 大枣 | 15 | 17.1.10 |
-| FuXiaoMai 浮小麦 | 10 | 18.1.2 |
-
-!!! Notes 
-
-Favoriser la fonction de déploiement du bois, 3F en tonification, à gauche. Eau engendre Bois, il y a peur, daoma sur taiyang.
-
-Le Foie monte à gauche.
-
-(http://sionneau.com/medecine-chinoise/articles/les-mouvements-du-qi-selon-la-medecine-chinoise/) :
-
-&lt;&lt;&lt;
-Lorsque nous étudions la nature des mouvements dans la physiologie des Zang Fu, il est habituel d’évoquer le couple poumon/foie. ''Il est dit que le Qi du foie à gauche monte et que celui du poumon à droite descend''. Ces deux mouvements aident respectivement le Qi de la rate à monter et le Qi de l’estomac à descendre. Le foie en bas dans le foyer inférieur favorise la montée, alors que le poumon en haut dans le foyer supérieur favorise la descente. 
-
-Ce rôle des organes bois et métal est mis en valeur par Ye Tian Shi  :
- « Le mécanisme du Qi du corps humain est uni naturellement au ciel et à la terre. Le foie à gauche monte, le poumon à droite descend, [ainsi] la montée et la descente sont comme il faut, alors le mécanisme du Qi se déploie. Le transport, l’écoulement, la circulation du Jing Qi dans le corps humain se fait grâce au pivotement du foie et du poumon. La montée du foie l’envoie en haut atteindre la tête jusqu’aux orifices supérieurs, la descente du poumon l’envoie en bas atteindre les Zang Fu jusqu’aux tendons et aux os, cela fait que le Qi et le sang circulent librement et que les Zang Fu sont calmes et en harmonie. » 
-
-Donc foie et poumon n’ont pas un rôle subalterne dans la promotion des mouvements de montée et de descente mais capital, au même titre que la rate et l’estomac, même si ceux-ci sont les initiateurs de ces mouvements grâce à leur position centrale.
-&lt;&lt;&lt;
-
----
-
-* 3F taichong 太冲 : Point yuan source, point shu-stream, point terre
-* 8F ququan 曲泉 : Point He-sea, point eau (engendre bois)
-* 3IG houxi 後溪 : Point shu-stream, point bois
-* 7C shenmen 神门 : Point yuan source, point terre, point shu-stream
-
-
-
-
-
-</pre>
-</div>
-<div category="Clinique" created="20191207112427094" modified="20191216141715701" tags="[[Observation clinique]]" title="161020FredP2" type="text/x-markdown">
-<pre>Femme  50aine
-
-Maladie Lyme.
-
-### Interrogatoire
-
-- Impression de perte des facultés mentales, intellectuelles
-- mémoire courte, fatigue
-- digestion de midi difficile, fatigue soudaine
-- constipation ++ quand en crise
-- moins de réaction Herx
-- sensation d'avoir la partie droite de la tête habitée par les parasites
-- céphalées mais douleurs faibles
-- prend serrapeptase et HE pour drainage foie
-- Kyste vaginal et kyste sur RM12
-
-### Observation
-
-- pouls fin, serré
-- langue : enduit gras blanc-jaune
-- peau sèche
-- pieds froids
-- soupire beaucoup, pose mains sur hypocondres souvent (obs. personnelle)
-
-
-### Acu
-
-- G: Shang Liu 55.06 : méridien Rn -&gt; cerveau, tête, douleurs craniales, fatigue
-- G: Point sur taiyang de pied au niveau du pied (qqpart vers 5e méta)
-- G: ZuSanLi
-- G: IG2 - IG3
-- D: Linggu + Dabai
-- D: 6TR Zhigou -&gt; dégage obstructions TR
-- Yintang
-- D: 2TR Yemen
-
-
-### Pharma
-
-Herbe | Dosage
----|:---:
-FU ZI | 15
-ZHI GAN CAO| 10
-CANG ZHU | 12
-DA HUANG | 12
-WU MEI | 12
-HUA JIAO | 10
-WU ZHU YU | 6
-GUI ZHI | 12
-HUANG LIAN | 6
-YU XING CAO | 15
-GAN JIANG | 10
-SHA REN | 6
-
-- Plantes entières, 8 sachets, 1 sachet / 3 jours
-- Ne pas séparer FUZI, DAHUANG
-- Ne pas concasser SHAREN
-- 1.8 Litres, 30 minutes feu doux, goûter pour éventuelle toxicité
-
-### Notes
-
-La cuisson en cocotte réduit le temps de cuisson et meilleure extraction des principes actifs.
-
-On utilise taiyang comme voie de sortie du pervers à jueyin, on chauffe pour activer le yang.</pre>
-</div>
-<div category="Clinique" created="20191207112452065" modified="20191216141750749" tags="[[Observation clinique]]" title="161020FredP3" type="text/x-markdown">
-<pre>Femme 40 - 45 ans, costaud 1m80 pour 87kg
-
-### Interrogatoire
-
-- goût métal bouche, comme carton, une espèce de pâte...
-- epistaxis
-- constipation légère, selles dures
-- pas de sécheresse des mains
-- pris herceptine[^1] pendant 1 an
-
-### Observation
-
-- obs. perso : mains gonflées, corpulente
-- langue : enduit jaune et gras, légèrement déviée, corps pâle
-- pouls hua glissant un peu plein Foyer Moyen, petite racine[^2] pouls rate
-- cicatrice violacée latérale du sein à omoplate 
-
-### Acu
-
-- 20aine aiguilles insérées dans la cicatrice juste sous la peau, env. 1 cm d'écart entre chaque
-- Jung Gyuk Estomac :   5IG+  41E+,  41VB-  43E- 
-
-### Pharma
-
-Herbe | Dosage
----| :---:
-Zhi Shi 枳实 | 10
-Fu Ling 茯苓 | 10
-Ze Xie 泽泻 | 10
-Bai Shao 白芍 | 5
-Da Huang 大黄 | 5
-Bai Zhu 白朮 | 25
-Huang Qi 黄芪 | 25
-???? | 15
-Si Gua Luo 丝瓜络 | 15
-Gan Jiang 干姜 | 10
-Shan Zhu Yu  山茱萸 | 12
-Dan Shen 丹参 | 6
-
-
-### Notes
-
-Renforcer métal sec de yangming -&gt; JG Est.
-
-[^1]: Herceptine est une substance que l'on appelle anticorps monoclonal et qui est utilisé pour traiter le cancer du sein. Cette substance a été découvert par le Dr Slamon en 1986 à la suite d'une remarque intéressante. 
-
-[^2]: Important de conserver la racine du pouls, si petite soit elle. Racine = pronostic favorable
-</pre>
-</div>
-<div category="Clinique" created="20191207112520938" modified="20191216141825005" tags="[[Observation clinique]]" title="161020FredP4" type="text/x-markdown">
-<pre>Homme, 50aine, épais mais pas gros.
-
-### Interrogatoire
-
-- Hémorroides ? de temps en temps sanguinolents
-- pb intestins ? diarrhées +, constipation -
-- diarrhées soudaines, pas odorantes
-- appétit OK
-- Fatigue ++
-- douleurs bas ventre gauche (obs : côlon descendant ?)
-- manipulations bassin calme diarrhées pour qqs jours
-
-### Observation
-
-- Pouls sans force, wúlì 无力
-- langue grosse
-
-### Acu
-
-- G: 36E 
-- G: 3F 
-- G: 3Rte
-- G: 7Rn fùliū 复溜
-- 25E + 6RM 
-- Moxa boite sur zone au-dessus nombril (entre 25E)
-
-### Pharma
-
-Herbe | Dosage
---- | :---:
-Bai Zhu 白朮 | 20
-Bai Bian Dou 白扁豆 | 15
-Fu Zi 附子 | 30
-Pao Jiang 炮姜 | 15
-Sha Ren 砂仁 | 12
-Mu Xiang  木香 | 10
-Zhi Gan Cao 炙甘草 | 9
-Huang Qi 黄芪 | 15
-San Qi 三七 | 12
-Ba Ji Tian 巴戟天 | 15
-Tu Si Zi 菟丝子 | 15
-Yin Yang Huo 淫羊藿 | 15
-
-### Notes
-
-Ba Ji Tian 巴戟天, Tu Si Zi 菟丝子,  Yin Yang Huo 淫羊藿 font partie des herbes qui supplémentent le yang (des reins) + actions sur lombes - genoux (il y problèmes au bassin mentionné). Stopper les diarrhées.
-
-Bai Bian Dou 白扁豆 entre dans Rate Estomac, fortifie la Rate, tranforme humidité
-
-Pao Jiang 炮姜, gingembre &quot;blast-fried&quot;, entre ds Foie Rate, réchauffe méridiens. Saignements provoqués par froid-vide. Combiné avec Fu Zi 附子 pour diarrhées (vide de rate).
-
-</pre>
-</div>
-<div category="Clinique" created="20191207112536361" modified="20191216142006714" tags="[[Observation clinique]]" title="161020FredP5" type="text/x-markdown">
-<pre>Femme 50aine, 1ere visite, petite, mince, regard éteint.
-
-### Interrogatoire
-
-- motif : dépression, mal bas du dos aux omoplates
-- céphalées (toute la tête)
-- cystytes interstitielles (syndrome vessie douloureuse med. occ.)
-- sommeil : se réveille plusieurs fois la nuit -&gt; question enfants? oui, grands
-- appétit mauvais
-- constipation sévère, ts les 5 jours, selles pas dures
-- question filiation, parents tjs vivants ? (voir notes séminaire Tung)
-- douleurs aux yeux suite opération
-
-### Observations
-
-- pouls faible au réch. moyen, pouls coeur légèrement petit, serré vessie, creux reins
-- teint jaune, terne
-- regard sans éclat, shen et coeur touchés
-- ongles striés
-- extrémités froides
-- langue pâle, tremblante
-
-### Acu
-
-- 3Rn tàixī 太溪, yuan source, point TERRE
-- 3F tàichōng 太冲 , Point TERRE, yuan source
-- wu hu ? jonction 1ere phalange pouce, bilatéral
-- wan shun yi - er ? 5eme métacarpe (taiyang de main)
-- 34E
-- 40E
-- 4Rn
-
-### Pharma
-
-Herbe | Dose
---- |:---:
-Fu Zi 附子 | 20
-Gan Jiang 干姜 | 25
-Zhi Gan Cao 炙甘草 | 30
-Gui Zhi 桂枝 | 15
-Shi Chang Pu 石菖蒲 | 10
-
-8 sachets, 1 sachet / 2 jours, cuisson 40 min. dans 1.2 L d'eau.
-
-### Notes
-
-Constipation taiyin, shi bu xia 食不下，nourriture ne descend pas. La Terre n'est pas nourrie, teint jaune terne.
-
-Fuzi + Ganjiang + Zhigancao -&gt; si ni tang
-
-Pas de Bai Zhu 白朮 car distention abdominale à la palpation. Guizhi ici pour favoriser qi hua de la vessie (voir wu ling san). Shichangpu pour ouvrir les orifices et calmer l'esprit, ouvre l'estomac pour augmenter la prise d'aliments et disperser la distention.
-
-On vise diminution progressive des antidépresseurs, puis de la pharma. Les psys suisses sont plus souples là dessus que les psys français.
-
-Si il y a un objet à la dépression, on peut soigner, même sur un terrain dépressif de longue date.
-
-Obs perso: Fred me parle et je comprends que ses propos sont adressés à la patiente, qui écoute attentivement ce qu'il me dit. Hehe, il est bon.
-</pre>
-</div>
-<div category="Clinique" created="20191207112553190" modified="20191216142038381" tags="[[Observation clinique]]" title="161020FredP6" type="text/x-markdown">
-<pre>Homme, 50-60 ans
-
-### Interrogatoire
-
-- Toux ? moins qu'avant... surtout la nuit si il y a toux
-- constipation à nouveau, selles ts les jours mais difficiles à expulser.
-- selles dures
-- mictions nocturnes (2-3 fois)
-
-### Observations
-
-- pouls hua réchauffeur supérieur et moyen
-- langue : ??? me rappelle pas
-
-### Acu
-
-- G: 3Rn
-- G: 7Rte
-- G: 6Rn
-- G: 3Rte (3 aiguilles)
-- G: 6MC neiguan
-- G: 33.13 RenShi  + 33.14 DiShi + 33.15 TianShi + 5P
-
-### Pharma
-
-Herbes| Dose | Section
----|:---:|---:|
-Tai Zi Shen 太子参 |12 | 17.1.4
-Wu Wei Zi 五味子 |  25 | 18.2.1
-Zhi Gan Cao 炙甘草 | 9 | 17.1.9
-Shu Di Huang 熟地黄 | 6 | 17.3.2
-Zhi Shi 枳实 | 6 | 8.1.2
-Kuan Dong Hua 款冬花 | 9 | 13.2.5
-Huo Ma Ren 火麻仁 | 9 | 3.2.1
-Gan Jiang 干姜 | 9 | 7.1.3
-Sang Bai Pi 桑白皮 | 15 | 13.2.8
-Fu Zi 附子 | 15 | 7.1.1
-
-
-Doute sur Zhe Shi 赭石 15.1.4 ou Zhi Shi 枳实 8.1.2
-
-Il manque deux plantes, j'ai mal retranscris les noms : &quot;xi shi zhi&quot; et &quot;hu dong huan&quot;
-
-### Notes
-
-Consulte suite AVC</pre>
-</div>
-<div category="Clinique" created="20191207112613505" modified="20191216142109835" tags="[[Observation clinique]]" title="161020FredP7" type="text/x-markdown">
-<pre>Jeune femme, trentaine, ablation thyroidienne suite tumeur
-
-### Interrogatoire
-
-- crampes bas du dos - jambes
-- dort mal, sent qu'il n'y a plus d'énergie
-- demi sommeil, peurs
-- palpitations, rêves abondants
-- somnambulisme
-- fatigue, xū láo 虚劳
-- selles dures et sèches, constipation -
-- oppression thoracique, sensation de creux
-- moins de fièvre
-
-### Observation
-
-- froid inversé des 4 membres
-- pouls faible racine réchauffeur moyen, serré taiyang
-- langue pâle, enduit blanc (obs perso: indentée)
-
-### Acu
-
-- 4RM en profondeur et localisé en sensation
-- 5Rn
-- 3Rn bilatéral
-- 6TR
-- 9C
-- 11.21 San Yan
-- 11.13 Dan
-
-### Pharma
-
-Herbe | Dose | Section
---- | :---: | ---:
-Fu Zi 附子 | 20 | 7.1.1
-Gan Jian 干姜  | 20 | 7.1.3
-Zhi Gan Cao 炙甘草 | 30 | 17.1.9
-Sha Ren 砂仁 | 9 | 5.1.5
-Zhi Ke 枳壳 | 12 | 8.1.2.A
-Fu Ling 茯苓 | 6 | 6.1.1
-
-Fuzi 附子 __ne pas séparer__  
-Sharen 砂仁 __ne pas concasser__
-
-6 sachets, 1 sachet pour 2 jours. Cuisson 40 min. dans 1.5L
-
-### Notes
-
-- Il faut améliorer communication Rn / C -&gt; équilibrer la Terre
-- 4RM piqué assez profond pour tonifier la profondeur
-- 5Rn grand point douleurs lombaires et sacrolombaires (+ holographie)
-- 3Rn bilatéral pour renforcer l'effet de réchauffement et la montée de l'eau, alimenter le feu ministre, voir loi midi / minuit, lien TR - Est ? (j'ai pas tout compris)
-- 6TR constipation
-- Quand Sharen est utilisé comme guide on ne la concasse pas, l'effet aromatique n'est pas spécialement recherché dans ce cas
-
-</pre>
-</div>
-<div category="Clinique" created="20191207112638567" modified="20191216142140170" tags="[[Observation clinique]]" title="170516FredP1" type="text/x-markdown">
-<pre>Femme 65-70 ans, cancer sein, métastase cérébrale
-
-* oedème au-dessus cheville droite
-* Sommeil ?
-* Douleur latérale gauche à la tête et dans l'oreille
-* Légère toux qui va et vient
-
-### ACU
-
-* D 3TR ZhongZhu 
-* D 40VB QuiXu en transfixion vers 4Rn DaZhong
-* D WaiSanGuan
-* G 4Rn DaZhong
-
-Combinaision Luo/Yuan
-
-
-### PHARMA
-
-- GUI ZHI 10
-- CHAI HU 15
-- CHUAN XIONG 15
-- XIA KU CAO 15
-- ZHI GAN CAO 5
-- BAI ZHI 15
-- ZHI SHI 15
-- BING PIAN 3</pre>
-</div>
-<div category="Clinique" created="20191207113139430" modified="20191216142211197" tags="[[Observation clinique]]" title="191206YanP1">
-<pre>* Femme
-* mycose vaginale qui apparaît avant les règles
-* stress, ballonnements
-* se réveille vers minuit et difficultés pour se rendormir
-* Langue courte, raide, tendue, bout rouge
-
-!! Acu
-
-* 4RM
-* Ling Gu
-* 24DM
-* Tung 11.17 木穴 
-
-!! Principe
-
-* favoriser souplesse du bois
-* drainer feu du Cœur
-
-Parmi les herbes il y a LianQiao.
-
----
-
-Il manque des données pharma et les côtés droite/gauche utilisés en acu
-
-</pre>
-</div>
-<div created="20191213091347317" modified="20191216142231260" tags="[[Observation clinique]]" title="191206YanP2">
-<pre>* Femme 60aine
-* Grosse fatigue, problèmes digestion
-* peau très sèche
-* alternance selles molles/dures
-* enduit langue gras humide
-
-!! Acu
-
-* D : Si Hua 77.08-09-10-11, (yangming de pied)
-* D : Huo Chuan - Ling - Shan 33.04-05-06 (shaoyang de main)
-* G : 65V + 3IG
-* G : Shen Guan 77.18 (taiyin de pied)</pre>
 </div>
 <div created="20191216134511325" modified="20191216144338954" tags="" title="Accueil">
 <pre>! Présentation
@@ -15979,9 +15510,6 @@ Toxicité : nausées, anorexie, vomissements, vertiges. La dose toxique se situe
 
 {{||refTabsTemplate}}</pre>
 </div>
-<div color="#aeed3c" created="20191119144546131" creator="Pascal" modified="20191216141500583" modifier="Pascal" tags="TableOfContents" title="Cas cliniques">
-<pre>&lt;&lt;list-links filter:&quot;[tag[Cas cliniques]]&quot;&gt;&gt;</pre>
-</div>
 <div category="Produit" chinois="柴胡" created="20191216134340781" latin="Bupleuri Radix" modified="20191223112030114" nature="lFd" pinyin="chái hú" posologie="3-9 gr" saveur="Am Pt" tags="[[Produits piquants et frais]]" title="ChaiHu" tropisme="VB F MC TR">
 <pre>!! {{!!chinois}} - {{!!pinyin}} - {{!!latin}}
 
@@ -16125,7 +15653,7 @@ Méthode de traitement pour Vent-Chaleur externe avec chaleur interne dans les r
 
 Par exemple : SangJuYin, YinQiaoSan</pre>
 </div>
-<div chinois="清热泻火" color="#ecf2df" created="20191223212624091" list="chinois tropisme saveur nature posologie" modified="20191223214258917" pinyin="qīng rè xiè huǒ" tags="Pharmacopée" title="Clarifient chaleur drainent feu">
+<div chinois="清热泻火" color="#ecf2df" created="20191223212624091" list="chinois tropisme saveur nature posologie" modified="20200109165930482" ordre="03" pinyin="qīng rè xiè huǒ" tags="Pharmacopée" title="Clarifient chaleur drainent feu">
 <pre>!! Les produits qui clarifient la chaleur et drainent le feu
 
 {{!!chinois}} - {{!!pinyin}}
@@ -16246,8 +15774,12 @@ Favorise la diurèse
 
 {{||refTabsTemplate}}</pre>
 </div>
-<div category="Formule" created="20200106104041439" modified="20200106112130507" tags="formula" title="DaQingLongTang">
-<pre>{{||getPosologie}}</pre>
+<div category="Formule" created="20200106104041439" list="MaHuang GuiZhi ShiGao DaZao XingRen ZhiGanCao ShengJiang" modified="20200107090957431" tags="Formules" title="DaQingLongTang">
+<pre>&lt;ul&gt;
+&lt;$list filter=&quot;[[posologies]getindex&lt;currentTiddler&gt;split[,]]&quot; variable=item &gt;&lt;li&gt;
+&lt;&lt;item&gt;&gt;&lt;br&gt;&lt;/li&gt;
+&lt;/$list&gt;
+&lt;/ul&gt;</pre>
 </div>
 <div created="20191209161149628" modified="20191210101212300" title="displayref">
 <pre>---
@@ -16897,6 +16429,9 @@ ChaoFangFeng : grillée. Plus efficace pour élever le Yang de la Rate et pour c
 
 </pre>
 </div>
+<div created="20200107090817378" modified="20200109165940512" ordre="10" tags="Pharmacopée" title="Formules">
+<pre>&lt;&lt;list-links filter:&quot;[tag&lt;currentTiddler&gt;]&quot;&gt;&gt;</pre>
+</div>
 <div category="Produit" chinois="藁本" created="20191110122206417" creator="Pascal" latin="Ligustici Rhizoma" modified="20191217114425991" modifier="Pascal" nature="Td" pinyin="gǎo běn" posologie="3-9 gr" saveur="Pt" tags="[[Produits piquants et tièdes]]" title="GaoBen" tropisme="V DM">
 <pre>!! {{!!chinois}} - {{!!pinyin}} - {{!!latin}}
 
@@ -17495,64 +17030,6 @@ Huangdi demanda : qu'observe-t-on grâce aux organes des sens ? Qibo répondit :
 
 黄帝曰：五色之见于明堂，以观五藏之气，左右高下，各有形乎？歧伯曰：藏府之在中也，各以次舍，左右上下，各如其度也。</pre>
 </div>
-<div acu="V67 IG1 IG3 P10 P9" created="20191119161420630" modified="20191119181123184" pharma="GuiZhiJiaGeGenTang GuiZhiJiaFuZiTang" tags="[[Cas cliniques]]" title="LS02-lombalgie">
-<pre>!! Contexte
-
-* H 41 ans
-* Lombalgie soudaine, dureté à la palpation
-* douleurs épaule gauche
-* Pouls serré
-* Langue pâle, grosse, humide
-
-Lombalgie apparue alors qu'il était dehors sous la neige
-
-!! Traitement
-
-On est sur un syndrome du méridien Tai Yang.
-
-!!! Principes
-
-* Calmer la douleur
-* Chasser le froid du méridien
-* Réchauffer les méridiens
-
-!!! Acu
-
-&lt;&lt;list-links &quot;[list[!!acu]]&quot;&gt;&gt;
-
-!!! Pharma
-
-&lt;&lt;list-links &quot;[list[!!pharma]]&quot;&gt;&gt;
-</pre>
-</div>
-<div acu="TR6 GI11 ZhiSanZhong" created="20191119184447969" modified="20191120105809734" pharma="YinQiaoSan" tags="[[Cas cliniques]]" title="LS02-psoriasis">
-<pre>!! Contexte
-
-* H 38 ans
-* problèmes dermato : psoriasis mains/coudes
-* Plaques rouges, suintent
-* Démangeaisons +++, brûlures
-* Aggravation quand fatigue/surmenage
-* Langue gonflée, pâle, enduit jaune gras
-* Pouls Hua, Se, Chen 
-
-!!Syndrome
-
-Déficience du Yang des Reins
-
-!! Traitement
-
-!!! Acu
-
-&lt;&lt;list-links &quot;[list[!!acu]]&quot;&gt;&gt;
-
-!!! Pharma
-
-* ChanTui + JingJie + FangFeng + KuShen
-* YinQiaoSan
-* MuDanPi + PaoFuZi + HaiGeKe
-</pre>
-</div>
 <div category="Produit" chinois="麻黄" created="20191013092125119" creator="Pascal" latin="Ephedrae Herba" modified="20191217114425992" modifier="Pascal" nature="Td" pinyin="má huáng" posologie="2-9 gr" saveur="Pt, lAm" tags="[[Produits piquants et tièdes]]" title="MaHuang" tropisme="P V">
 <pre>!! {{!!chinois}} - {{!!pinyin}} - {{!!latin}}
 
@@ -17614,13 +17091,73 @@ En forme préparée (ZhiMaHuang ou MiZhiMaHuang) les effets diaphorétiques sont
 
 {{||refTabsTemplate}}</pre>
 </div>
-<div category="Formule" created="20200104213129164" modified="20200104222129495" posologie="MaHuang : 6, GuiZhi : 6, XingRen : 9, ZhiGanCao : 6" tags="formula" title="MaHuangTang">
-<pre>{{||getPosologie}}
+<div category="Formule" created="20200116142439821" modified="20200116142928882" tags="Formules" title="MaHuangJiaZhuTang">
+<pre>!!! Composition
 
-MaHuang
+* MaHuang : 6
+* GuiZhi : 4
+* BaiZhu : 9
+* XingRen : 9
+* ZhiGanCao : 3
 
+!!! Actions
 
-</pre>
+Provoque la transpiration pour libérer la Superficie, disperse le Froid et élimine l'Humidité
+
+!!! Indications
+
+* Syndrome biao avec œdème qui commence aux paupières et s'étend aux quatre membres puis tout le corps
+* Crainte du Vent et du Froid
+* Fièvre
+* Courbatures, douleurs articulaires
+* Urines courtes
+* Enduit mince et blanc
+* Pouls superficiel et rapide </pre>
+</div>
+<div category="Formule" created="20200104213129164" modified="20200116142336831" posologie="{{posologies##MaHuangTang}}" tags="Formules" title="MaHuangTang">
+<pre>!!! Composition
+
+* MaHuang : 6
+* GuiZhi : 6
+* XingRen : 9
+* ZhiGanCao : 6
+
+!!! Actions
+
+Provoque la sudorification pour libérer la Superficie. Disperse le Poumon et calme l'asthme.
+
+!!! Indications cliniques
+
+Syndrome Biao plénitude, attaque de Vent-Froid sur le taiyang, entraînant maladie externe dans la Superficie.
+
+!!! Symptomes
+
+* Frissons importants
+* Fièvre, absence de transpiration
+* Céphalées, douleurs du corps, arthralgies
+* Obstruction / écoulement nasal
+* Dyspnée
+* Toux, asthme
+* Langue : enduit fin
+* Pouls : superficiel, serré
+
+!!! Indications
+
+* Infection des voies respiratoires supérieures (syndrome biao froid)
+* Asthme et dyspnée syndrome biao dû au froid externe
+* Œdème type yang
+* Stade initial rougeole
+* Psoriasis infantile (en combinaison avec SiWuTang)
+
+!!! Variations
+
+* En cas d'Humidité externe avec douleurs articulaires, lourdeur du corps, ajouter BaiZhu : 6
+* En cas de crainte légère du froid avec asthme, retirer GuiZhi, ce qui donne SanAoTang
+* En cas de crainte sévère du froid sans transpiration, douleurs généralisées et dysphorie due à la chaleur interne, doubler MaHuang et ajouter ShiGao pour obtenir DaQingLongTang
+
+!!! Précautions
+
+Cette formule ne convient pas pour les constitutions faibles, s'il y a transpirations spontanées dans le cadre d'un syndrome biao-froid vide, syndrome biao de type vent-chaleur ou syndrome de chaleur du à l'accumulation du facteur pathogène</pre>
 </div>
 <div category="Produit" chinois="曼荆子" created="20191129083309306" creator="Pascal" latin="Viticis Fructus" modified="20191217114540592" modifier="Pascal" nature="Fs" pinyin="màn jīng zǐ" posologie="6-12 gr" saveur="Pt" tags="[[Produits piquants et frais]]" title="ManJingZi" tropisme="V F E">
 <pre>!! {{!!chinois}} - {{!!pinyin}} - {{!!latin}}
@@ -17674,34 +17211,6 @@ Plante auxiliaire dans le syndrome Bi de Vent-Humidité dans les membres : raide
 &lt;/div&gt;
 
 {{||refTabsTemplate}}</pre>
-</div>
-<div acu="RM4 E25 RM12 RM9" created="20191119144729986" modified="20191119180112844" pharma="BanXia HuangQin GanJiang HuangLian YanHuShuo FoShou" tags="[[Cas cliniques]]" title="Modif BanXiaXieXinTg">
-<pre>!! Contexte
-
-Homme 51 ans
-
-* dépression depuis 15 ans
-* Point douloureux à l'ingestion (vers le F13)
-* brûlures œsophage
-* selles molles
-* Fin de journée : genoux et pieds brûlants
-* Ongles et joues pâles
-* Pouls : inversé, glissant et serré 3^^e^^ loge
-* Langue pâle, enduit jaune gras au RI
-
-!! Acu
-
-&lt;$list filter=&quot;[list[!!acu]]&quot; /&gt;
-
-
-!! Pharma
-
-Base : BanXiaXieXinTang
-
-&lt;$list filter=&quot;[list[!!pharma]]&quot; /&gt;
-
-
-</pre>
 </div>
 <div created="20191014093642296" modified="20191015090036429" tags="" title="New Pharma Tiddler">
 <pre>&lt;$button message=&quot;tm-new-tiddler&quot; param=&quot;PHARMATMP&quot; caption=&quot;blala&quot;&gt;Pharma Tiddler&lt;/$button&gt;</pre>
@@ -17759,9 +17268,6 @@ En cas de toxines d'origine externe avec douleur de la gorge, érythèmes, rash 
 </div>
 <div created="20191119143615965" modified="20191119143633595" tags="TableOfContents" title="Notes">
 <pre></pre>
-</div>
-<div created="20191207111239236" modified="20191216141409269" tags="TableOfContents" title="Observation clinique">
-<pre>&lt;&lt;list-links filter:&quot;[tag[Observation clinique]]&quot;&gt;&gt;</pre>
 </div>
 <div chinois="心脉痹阻" created="20191010193419343" modified="20191010195349193" pinyin="xīn mài bì zǔ" tags="[[Syndromes du Cœur]]" title="Obstruction des vaisseaux du cœur">
 <pre>4 syndromes : 
@@ -17828,10 +17334,10 @@ Recouvrent en partie les cardiopathies de la médecine occidentale.
 
 </pre>
 </div>
-<div created="20191013091018234" creator="Pascal" mode="" modified="20191224123751076" modifier="Pascal" tags="TableOfContents" title="Pharmacopée">
+<div created="20191013091018234" creator="Pascal" fuzzy="ordre" modified="20200113172128818" modifier="Pascal" tags="TableOfContents" title="Pharmacopée">
 <pre>{{Légende}}
 
-&lt;$list filter=&quot;[tag&lt;currentTiddler&gt;]&quot; &gt;
+&lt;$list filter=&quot;[tag&lt;currentTiddler&gt;sort[ordre]]&quot; &gt;
 &lt;$details tiddler=&lt;&lt;currentTiddler&gt;&gt; &gt;
 
 &lt;$transclude tiddler=&lt;&lt;currentTiddler&gt;&gt; /&gt;
@@ -17896,14 +17402,14 @@ Recouvrent en partie les cardiopathies de la médecine occidentale.
 MaHuangJiaZhuTang : MaHuang : 6, GuiZhi : 4, BaiZhu : 9, XingRen : 9, ZhiGanCao : 3
 DaQingLongTang : MaHuang : 12, GuiZhi : 4, ShiGao : 12, DaZao : 9, XingRen : 6, ZhiGanCao : 5, ShengJiang : 9</pre>
 </div>
-<div chinois="辛凉解表" color="#9ef5f6" created="20191118091755921" creator="Pascal" list="chinois tropisme saveur nature posologie" modified="20191216211010828" modifier="Pascal" pinyin="xīn liáng jiě biǎo" tags="Pharmacopée" title="Produits piquants et frais">
+<div chinois="辛凉解表" color="#9ef5f6" created="20191118091755921" creator="Pascal" list="chinois tropisme saveur nature posologie" modified="20200109165921982" modifier="Pascal" ordre="02" pinyin="xīn liáng jiě biǎo" tags="Pharmacopée" title="Produits piquants et frais">
 <pre>!! Les produits piquants et frais qui libèrent la Superficie
 
 {{!!chinois}} - {{!!pinyin}}
 
 &lt;&lt;fields2table &quot;[tag[Produits piquants et frais]]&quot;&gt;&gt;</pre>
 </div>
-<div chinois="辛温解表" color="#f29839" created="20191013091129612" creator="Pascal" list="chinois tropisme saveur nature posologie" mode="" modified="20191216211029154" modifier="Pascal" pinyin="xīn wēn jiě biǎo" tags="Pharmacopée" title="Produits piquants et tièdes" type="text/vnd.tiddlywiki">
+<div chinois="辛温解表" color="#f29839" created="20191013091129612" creator="Pascal" list="chinois tropisme saveur nature posologie" mode="" modified="20200109165907334" modifier="Pascal" ordre="01" pinyin="xīn wēn jiě biǎo" tags="Pharmacopée" title="Produits piquants et tièdes" type="text/vnd.tiddlywiki">
 <pre>!! Les produits piquants et tièdes qui libèrent la Superficie
 
 {{!!chinois}} - {{!!pinyin}}
@@ -19256,6 +18762,11 @@ Cas légers de vomissements de sang dus à la chaleur dans le sang.
 
 {{||refTabsTemplate}}</pre>
 </div>
+<div caption="HeheheSave" created="20200109215847864" modified="20200117172218656" tags="" title="saveSelected">
+<pre>&lt;$button&gt;
+&lt;$action-websocketmessage $type='buildHTMLWiki' excludeList=&quot;[tag[Observation clinique]][tag[Cas cliniques]][[Observation clinique]][[Cas cliniques]]&quot; outputName=&quot;index.html&quot;  /&gt;
+&lt;/$button&gt;</pre>
+</div>
 <div created="20191015122812385" modified="20191015122841141" tags="" title="saveur">
 <pre></pre>
 </div>
@@ -19508,6 +19019,41 @@ Please wait while {{$:/SiteTitle}} is loading
 
 &lt;/div&gt;</pre>
 </div>
+<div category="Glossaire" chinois="淋证" created="20200113114437720" creator="Pascal" modified="20200113114920967" modifier="Pascal" pinyin="lìn zhèng" tags="glossaire" title="Strangurie">
+<pre>!! {{!!chinois}} - {{!!pinyin}}
+
+Variété de maladies caractérisées  par mictions fréquentes et douloureuses, au goutte à goutte</pre>
+</div>
+<div category="Glossaire" chinois="膏淋" created="20200113122213956" creator="Pascal" modified="20200113122700748" modifier="Pascal" pinyin="gǎo lìn" tags="glossaire" title="Strangurie chyleuse">
+<pre>!! {{!!chinois}} - {{!!pinyin}}
+
+Mictions douloureuses d'urine trouble et huileuse (comme de l'eau de riz)</pre>
+</div>
+<div category="Glossaire" chinois="热淋" created="20200113122720148" creator="Pascal" modified="20200113122920201" modifier="Pascal" pinyin="rè lìn" tags="glossaire" title="Strangurie de chaleur">
+<pre>!! {{!!chinois}} - {{!!pinyin}}
+
+Strangurie due à la chaleur, mictions brûlantes et jaunâtres, parfois fièvre</pre>
+</div>
+<div category="Glossaire" chinois="劳淋" created="20200113121848144" creator="Pascal" modified="20200113122138628" modifier="Pascal" pinyin="láo lìn" tags="glossaire" title="Strangurie de consomption">
+<pre>!! {{!!chinois}} - {{!!pinyin}}
+
+Strangurie due au surmenage, généralement dans des cas chroniques et accompagnée de douleurs sourdes</pre>
+</div>
+<div category="Glossaire" chinois="气淋" created="20200113115939928" creator="Pascal" modified="20200113121728435" modifier="Pascal" pinyin="qì lìn" tags="glossaire" title="Strangurie du Qi">
+<pre>!! {{!!chinois}} - {{!!pinyin}}
+
+Strangurie due aux désordres du Qi, excès ou insuffisance</pre>
+</div>
+<div category="Glossaire" chinois="血淋" created="20200113123100327" creator="Pascal" modified="20200113123155228" modifier="Pascal" pinyin="xuè lìn" tags="glossaire" title="Strangurie du sang">
+<pre>!! {{!!chinois}} - {{!!pinyin}}
+
+Mictions sanglantes</pre>
+</div>
+<div category="Glossaire" chinois="石淋" created="20200113115206673" creator="Pascal" modified="20200113115725785" modifier="Pascal" pinyin="shí lìn" tags="glossaire" title="Strangurie urolithique">
+<pre>!! {{!!chinois}} - {{!!pinyin}}
+
+Miction difficile et douloureuse due aux calculs urinaires</pre>
+</div>
 <div created="20191126120936325" creator="Pascal" modified="20191228231113332" modifier="Pascal" tags="Classiques" title="SuWen">
 <pre>&lt;&lt;list-links filter:&quot;[tag&lt;currentTiddler&gt;]&quot;&gt;&gt;</pre>
 </div>
@@ -19621,10 +19167,10 @@ Le piquant (âcre) disperse (diffuse), l'acide fait l’astringence, le doux rel
 &lt;hr/&gt;
 &lt;&lt;showfnotes&gt;&gt;</pre>
 </div>
-<div caption="Menu" created="20190922090756366" list-after="$:/core/ui/SideBar/Open" modified="20191011082222899" tags="$:/tags/SideBar" title="TableOfContents">
+<div caption="Menu" created="20190922090756366" list-after="$:/core/ui/SideBar/Open" modified="20200109170015302" tags="$:/tags/SideBar" title="TableOfContents">
 <pre>&lt;div class=&quot;tc-table-of-contents&quot;&gt;
 
-&lt;&lt;toc-selective-expandable 'TableOfContents'&gt;&gt;
+&lt;&lt;toc-selective-expandable 'TableOfContents' &quot;sort{!!fuzzy}&quot;&gt;&gt;
 
 &lt;/div&gt;</pre>
 </div>
@@ -20614,49 +20160,6 @@ Plante interdite en France
 &lt;/div&gt;
 
 {{||refTabsTemplate}}</pre>
-</div>
-<div category="Clinique" created="20191119154807914" modified="20191209155930779" tags="[[Cas cliniques]]" title="YBwe7 Angoisses">
-<pre>!!! Contexte
-
-* Femme de 53 ans, déléguée médicale, consulte pour des angoisses qui durent depuis 18 mois.
-* Tachycardie, panique sur l’autoroute.
-* Extrasystoles.
-* Idées fixes.
-* Grande frilosité.
-* Pouls fin, enduit blanc.
-* Traitement en cours pour une thyroidie d’Achimoto (Baisse du système immunitaire)
-
-!!! Antécédents : 
-* Ligament croisé et curetage méniscal.
-* Clamydiae
-* Ablation de la VB pour des calculs.
-* Prolapsus anal suite au 3eme accouchement.
-
-!!! Diagnostic : 
-Le Yang n’a pas de racine, et il monte. L’axe Shao Yin est perturbé.
-
-!!! Principe de traitement : 
-
-Libérer l’accumulation et tonifier la Rate.
-
-!!! Plantes :
-
-On part sur : Gui Zhi Jia Lang Gu Mu Li Tang + Gan Jiang.
-
-* Gan Jiang	: 15 gr -
-* Gui Zhi		: 20 gr -
-* Da Zao		: 15 gr -
-* Chang Pu	: 5 gr -
-* Dan Shen	: 5 gr - 
-* Duan Mu Li	: 15 gr - 
-* Shi Jue Ming	: 15 gr - 
-* Wu Jia Pi	: 5 gr - 
-
-!!! Acupuncture : 
-
-4RM - 3Rn - 36Est, le tout en moxas
-
-</pre>
 </div>
 <div created="20190923084154888" modified="20191224121300868" tags="TableOfContents" title="ZangFuBianZheng">
 <pre>&lt;&lt;list-links filter:&quot;[tag&lt;currentTiddler&gt;]&quot;&gt;&gt;</pre>
